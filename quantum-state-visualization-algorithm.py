@@ -7,7 +7,7 @@ from qiskit.visualization import plot_bloch_vector
 def quantum_state_modeler(qubits=1, gates=['h']):
     """
     Modélise l'évolution d'un état quantique through les portes logiques
-    Visualise sur la sphère de Bloch - parfaite pour ton dépôt
+    Visualise sur la sphère de Bloch - 
     """
     qc = QuantumCircuit(qubits)
     
@@ -38,4 +38,5 @@ def quantum_state_modeler(qubits=1, gates=['h']):
 
 # Exemple d'utilisation
 bloch_vec, circuit = quantum_state_modeler(gates=['h', 'x'])
+
 plot_bloch_vector(bloch_vec)  # Visualisation élégante
